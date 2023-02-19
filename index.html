@@ -5,53 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Головна</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Rubik:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <a href="/"><img src="./images/logo.svg" alt="logo" /></a>
+      <a class="link logo" href="/"
+        ><img src="./images/logo.svg" alt="logo" /> <span>Architects</span></a
+      >
       <nav>
         <ul>
-          <li><a href="/">Головна</a></li>
-          <li><a href="./gallery.html">Галерея</a></li>
-          <li><a href="./projects.html">Проекти</a></li>
-          <li><a href="./certificates.html">Сертифікати</a></li>
-          <li><a href="./contacts.html">Контакти</a></li>
+          <li><a class="link" href="/">Головна</a></li>
+          <li><a class="link" href="./gallery.html">Галерея</a></li>
+          <li><a class="link" href="./projects.html">Проекти</a></li>
+          <li><a class="link" href="./certificates.html">Сертифікати</a></li>
+          <li><a class="link" href="./contacts.html">Контакти</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="hero">
-        <h1>Project<span>Nurtown</span></h1>
+      <section class="section hero">
+        <h1 class="section-title">Project <span>Nurtown</span></h1>
         <ul>
           <li>
-            <button type="button"><img src="/" alt="left" /></button>
+            <button class="btn" type="button">
+              <img src="/" alt="left" />
+            </button>
           </li>
           <li>
-            <button type="button"><img src="/" alt="right" /></button>
+            <button class="btn" type="button">
+              <img src="/" alt="right" />
+            </button>
           </li>
         </ul>
-        <div>
-          <p>01</p>
+        <div class="slide-counter">
+          <p class="slide-current">01</p>
           <p>02</p>
         </div>
         <ul>
           <li>
-            <img src="./images/" alt="Project Nurtown" /><a href="/">
+            <img src="./images/main/hero-slide-1.jpg" alt="Project Nurtown" /><a
+              class="link"
+              href="/"
+            >
               Переглянути
             </a>
           </li>
           <li hidden>
-            <img src="./images/" alt="Project" /><a href="/">Переглянути</a>
+            <img src="./images/main/hero-slide-2.jpg" alt="Project" /><a
+              class="link"
+              href="/"
+              >Переглянути</a
+            >
           </li>
         </ul>
       </section>
-      <section class="about-us">
+      <section class="section about-us">
         <ul>
-          <li><img src="./images/" alt="building-1" /></li>
-          <li><img src="./images/" alt="building-2" /></li>
-          <li><img src="./images/" alt="building-3" /></li>
+          <li>
+            <img src="./images/main/about-us-img-1.jpg" alt="building-1" />
+          </li>
+          <li>
+            <img src="./images/main/about-us-img-2.jpg" alt="building-2" />
+          </li>
+          <li>
+            <img src="./images/main/about-us-img-3.jpg" alt="building-3" />
+          </li>
         </ul>
-        <h2>Про компанію</h2>
+        <h2 class="section-title">Про компанію</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -60,10 +86,10 @@
           five centuries, but also the leap into electronic typesetting,
           remaining essentially unchanged.
         </p>
-        <a href="/">Читати</a>
+        <a class="link" href="/">Читати</a>
       </section>
-      <section class="tasks">
-        <h2></h2>
+      <section class="section tasks">
+        <h2 class="section-title">Основні задачі</h2>
         <ol>
           <li>
             <p>
@@ -79,53 +105,53 @@
           </li>
         </ol>
       </section>
-      <section class="projects">
-        <h2>Наші проекти</h2>
+      <section class="section projects">
+        <h2 class="section-title">Наші проекти</h2>
         <ul>
           <li>
-            <img src="/" alt="project-1" />
-            <div>
+            <img src="./images/main/project-1.jpg" alt="project-1" />
+            <div class="projects-container">
               <h3>Досуговий центр</h3>
-              <a href="/">Детальніше</a>
+              <a class="link projects-link" href="/">Детальніше</a>
             </div>
           </li>
           <li>
-            <img src="/" alt="project-2" />
-            <div>
+            <img src="./images/main/project-2.jpg" alt="project-2" />
+            <div class="projects-container">
               <h3>Project 2</h3>
-              <a href="/">Детальніше</a>
+              <a class="link projects-link" href="/">Детальніше</a>
             </div>
           </li>
           <li>
-            <img src="/" alt="project-3" />
-            <div>
+            <img src="./images/main/project-3.jpg" alt="project-3" />
+            <div class="projects-container">
               <h3>Project 3</h3>
-              <a href="/">Детальніше</a>
+              <a class="link projects-link" href="/">Детальніше</a>
             </div>
           </li>
           <li>
-            <img src="/" alt="project-4" />
-            <div>
+            <img src="./images/main/project-4.jpg" alt="project-4" />
+            <div class="projects-container">
               <h3>Project 4</h3>
-              <a href="/">Детальніше</a>
+              <a class="link projects-link" href="/">Детальніше</a>
             </div>
           </li>
           <li>
-            <img src="/" alt="project-5" />
-            <div>
+            <img src="./images/main/project-5.jpg" alt="project-5" />
+            <div class="projects-container">
               <h3>Project 5</h3>
-              <a href="/">Детальніше</a>
+              <a class="link projects-link" href="/">Детальніше</a>
             </div>
           </li>
         </ul>
-        <a href="/projects">Всі проекти</a>
+        <a class="link projects-link" href="/projects">Всі проекти</a>
       </section>
-      <section class="contacts">
-        <h2></h2>
+      <section class="section contacts">
+        <h2 class="section-title">Зв'яжіться з нами</h2>
         <form action="submit">
           <input type="text" placeholder="Ім'я" />
-          <input type="tel" placeholder="Номер телефону" />
-          <input type="email" placeholder="E-mail" />
+          <input type="tel" placeholder="Номер телефону" required />
+          <input type="email" placeholder="E-mail" required />
           <input type="text" placeholder="Товар/послуга, що цікавить" />
           <textarea
             name="massage"
@@ -133,46 +159,69 @@
             cols="30"
             rows="10"
             placeholder="Повідомлення"
+            required
           ></textarea>
           <input type="checkbox" name="agree" id="agree" />
-          <button type="submit">Відправити</button>
+          <button class="btn form-btn" type="submit">Відправити</button>
         </form>
       </section>
     </main>
-    <footer>
-      <a href="/"><img src="./images/logo.svg" alt="white logo" /></a>
+    <footer class="footer">
+      <a class="link footer-link" href="/"
+        ><img src="./images/logo.svg" alt="white logo"
+      /></a>
       <div>
         <h3>Інформація</h3>
         <ul>
-          <li><a href="/">Головна</a></li>
-          <li><a href="./gallery.html">Галерея</a></li>
-          <li><a href="./projects.html">Проекти</a></li>
-          <li><a href="./certificates.html">Сертифікати</a></li>
-          <li><a href="./contacts.html">Контакти</a></li>
+          <li><a class="link footer-link" href="/">Головна</a></li>
+          <li><a class="link footer-link" href="./gallery.html">Галерея</a></li>
+          <li>
+            <a class="link footer-link" href="./projects.html">Проекти</a>
+          </li>
+          <li>
+            <a class="link footer-link" href="./certificates.html"
+              >Сертифікати</a
+            >
+          </li>
+          <li>
+            <a class="link footer-link" href="./contacts.html">Контакти</a>
+          </li>
         </ul>
       </div>
       <div>
         <h3>Контакти</h3>
         <ul>
-          <li><a href="/">просп. Д.Яворницькго 3, Дніпро, 49000</a></li>
-          <li><a href="/">+38 056 111 11 11</a></li>
-          <li><a href="/">architect@email.com</a></li>
+          <li>
+            <a class="link footer-link" href="/"
+              >просп. Д.Яворницькго 3, Дніпро, 49000</a
+            >
+          </li>
+          <li><a class="link footer-link" href="/">+38 056 111 11 11</a></li>
+          <li><a class="link footer-link" href="/">architect@email.com</a></li>
         </ul>
       </div>
       <div>
         <h3>Соціальні мережі</h3>
         <ul>
           <li>
-            <a href="/"><img src="/" alt="facebook" /></a>
+            <a class="link footer-link" href="/"
+              ><img src="/" alt="facebook"
+            /></a>
           </li>
           <li>
-            <a href="/"><img src="/" alt="twitter" /></a>
+            <a class="link footer-link" href="/"
+              ><img src="/" alt="twitter"
+            /></a>
           </li>
           <li>
-            <a href="/"><img src="/" alt="linkedIn" /></a>
+            <a class="link footer-link" href="/"
+              ><img src="/" alt="linkedIn"
+            /></a>
           </li>
           <li>
-            <a href="/"><img src="/" alt="pinterest" /></a>
+            <a class="link footer-link" href="/"
+              ><img src="/" alt="pinterest"
+            /></a>
           </li>
         </ul>
       </div>

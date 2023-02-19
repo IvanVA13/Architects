@@ -4,75 +4,113 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Головна</title>
+    <title>Сертифікати</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Rubik:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <a href="/"><img src="./images/logo.svg" alt="logo" /></a>
+      <a class="link" href="/"
+        ><img src="./images/logo.svg" alt="logo" /> <span>Architects</span></a
+      >
       <nav>
         <ul>
-          <li><a href="/">Головна</a></li>
-          <li><a href="./gallery.html">Галерея</a></li>
-          <li><a href="./projects.html">Проекти</a></li>
-          <li><a href="./certificates.html">Сертифікати</a></li>
-          <li><a href="./contacts.html">Контакти</a></li>
+          <li><a class="link" href="/">Головна</a></li>
+          <li><a class="link" href="./gallery.html">Галерея</a></li>
+          <li><a class="link" href="./projects.html">Проекти</a></li>
+          <li><a class="link" href="./certificates.html">Сертифікати</a></li>
+          <li><a class="link" href="./contacts.html">Контакти</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1>Сертифікати компанії</h1>
+      <section class="section"></section>
+      <h1 class="section-title">Сертифікати <span>компанії</span></h1>
       <ul>
-        <li><img src="./images/" alt="certificate-1" /></li>
-        <li><img src="./images/" alt="certificate-2" /></li>
-        <li><img src="./images/" alt="certificate-3" /></li>
+        <li>
+          <img src="./images/certificates/cert-1.jpg" alt="certificate-1" />
+        </li>
+        <li>
+          <img src="./images/certificates/cert-1.jpg" alt="certificate-2" />
+        </li>
+        <li>
+          <img src="./images/certificates/cert-1.jpg" alt="certificate-3" />
+        </li>
       </ul>
-      <div>
-        <p>01</p>
+      <div class="slide-counter">
+        <p class="slide-current">01</p>
         <p>05</p>
       </div>
       <ul>
         <li>
-          <button type="button"><img src="/" alt="left" /></button>
+          <button class="btn" type="button"><img src="/" alt="left" /></button>
         </li>
         <li>
-          <button type="button"><img src="/" alt="right" /></button>
+          <button class="btn" type="button"><img src="/" alt="right" /></button>
         </li>
       </ul>
     </main>
-    <footer>
-      <a href="/"><img src="./images/logo.svg" alt="white logo" /></a>
+    <footer class="footer">
+      <a class="link footer-link" href="/"
+        ><img src="./images/logo.svg" alt="white logo"
+      /></a>
       <div>
         <h3>Інформація</h3>
         <ul>
-          <li><a href="/">Головна</a></li>
-          <li><a href="./gallery.html">Галерея</a></li>
-          <li><a href="./projects.html">Проекти</a></li>
-          <li><a href="./certificates.html">Сертифікати</a></li>
-          <li><a href="./contacts.html">Контакти</a></li>
+          <li><a class="link footer-link" href="/">Головна</a></li>
+          <li><a class="link footer-link" href="./gallery.html">Галерея</a></li>
+          <li>
+            <a class="link footer-link" href="./projects.html">Проекти</a>
+          </li>
+          <li>
+            <a class="link footer-link" href="./certificates.html"
+              >Сертифікати</a
+            >
+          </li>
+          <li>
+            <a class="link footer-link" href="./contacts.html">Контакти</a>
+          </li>
         </ul>
       </div>
       <div>
         <h3>Контакти</h3>
         <ul>
-          <li><a href="/">просп. Д.Яворницькго 3, Дніпро, 49000</a></li>
-          <li><a href="/">+38 056 111 11 11</a></li>
-          <li><a href="/">architect@email.com</a></li>
+          <li>
+            <a class="link footer-link" href="/"
+              >просп. Д.Яворницькго 3, Дніпро, 49000</a
+            >
+          </li>
+          <li><a class="link footer-link" href="/">+38 056 111 11 11</a></li>
+          <li><a class="link footer-link" href="/">architect@email.com</a></li>
         </ul>
       </div>
       <div>
         <h3>Соціальні мережі</h3>
         <ul>
           <li>
-            <a href="/"><img src="/" alt="facebook" /></a>
+            <a class="link footer-link" href="/"
+              ><img src="/" alt="facebook"
+            /></a>
           </li>
           <li>
-            <a href="/"><img src="/" alt="twitter" /></a>
+            <a class="link footer-link" href="/"
+              ><img src="/" alt="twitter"
+            /></a>
           </li>
           <li>
-            <a href="/"><img src="/" alt="linkedIn" /></a>
+            <a class="link footer-link" href="/"
+              ><img src="/" alt="linkedIn"
+            /></a>
           </li>
           <li>
-            <a href="/"><img src="/" alt="pinterest" /></a>
+            <a class="link footer-link" href="/"
+              ><img src="/" alt="pinterest"
+            /></a>
           </li>
         </ul>
       </div>
