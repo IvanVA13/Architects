@@ -1,0 +1,221 @@
+:root {
+  --main-color: #333333;
+  --second-color: #bdbdbd;
+  --accent-color: #ffffff;
+  --second-accent-color: rgba(200, 200, 200, 0.5);
+  --bg-color: #fbfbfb;
+  --second-bg-color: #2c2c2c;
+  --third-bg-color: #f3f3f3;
+  --form-color: #8d8d8d;
+  --card-color: #fbfbfb;
+}
+
+body {
+  color: var(--main-color);
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.56;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.link {
+  color: inherit;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: var(--accent-color);
+}
+.link:visited {
+  color: inherit;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+  background-color: var(--main-color);
+}
+
+.btn {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  background-color: var(--third-bg-color);
+  border: 1px solid #f2f2f2;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--third-bg-color);
+  background-color: var(--main-color);
+}
+
+.section {
+}
+
+.section-title {
+  color: var(--second-color);
+  font-size: 64px;
+  font-weight: inherit;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.section-title span {
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+.logo {
+}
+
+.nav {
+}
+
+.nav-link {
+}
+
+.nav-link.accent {
+}
+
+.slide-counter {
+  color: var(--second-color);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.slide-current {
+  color: var(--main-color);
+}
+
+.footer {
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  background-color: var(--second-bg-color);
+}
+
+.footer h3 {
+  color: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.footer-link {
+  background-color: inherit;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--main-color);
+  background-color: var(--accent-color);
+}
+
+/* main page */
+.tasks {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.64;
+}
+
+.tasks ol {
+  list-style-type: none;
+  counter-reset: ol-counter;
+}
+.tasks ol li:before {
+  color: var(--third-bg-color);
+  font-weight: 900;
+  font-size: 200px;
+  line-height: 1.2;
+  content: counter(ol-counter);
+  counter-increment: ol-counter;
+}
+
+.projects {
+  color: var(--accent-color);
+  font-family: "Gothic A1", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.projects-container {
+  background-color: var(--main-color);
+  opacity: 0.8;
+}
+
+.projects h3 {
+  color: inherit;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1;
+}
+
+.projects-link {
+  background-color: inherit;
+}
+
+.projects-link:hover,
+.projects-link:focus {
+  color: var(--main-color);
+  background-color: var(--accent-color);
+}
+
+.form {
+  color: var(--form-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1.21;
+}
+
+.form-btn {
+  color: var(--accent-color);
+  background-color: var(--main-color);
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  color: var(--main-color);
+  background-color: var(--accent-color);
+}
+/* gallery page */
+.gallery {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.gallery-container {
+  background-color: var(--card-color);
+}
+
+/* projects */
+.projects-list h2 {
+  color: var(--form-color);
+  font-weight: inherit;
+  font-size: 40px;
+  line-height: 1.25;
+}
