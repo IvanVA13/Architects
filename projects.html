@@ -11,146 +11,186 @@
       href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Rubik:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <a class="link" href="/"
-        ><img src="./images/logo.svg" alt="logo" /> <span>Architects</span></a
-      >
-      <nav>
-        <ul>
-          <li><a class="link" href="/">Головна</a></li>
-          <li><a class="link" href="./gallery.html">Галерея</a></li>
-          <li><a class="link" href="./projects.html">Проекти</a></li>
-          <li><a class="link" href="./certificates.html">Сертифікати</a></li>
-          <li><a class="link" href="./contacts.html">Контакти</a></li>
-        </ul>
-      </nav>
+      <div class="container flex-box">
+        <a class="link logo" href="/"
+          ><img src="./images/logo.svg" alt="logo" /> <span>Architects</span></a
+        >
+        <nav>
+          <ul class="nav-list">
+            <li class="item"><a class="link nav-link" href="/">Головна</a></li>
+            <li class="item">
+              <a class="link nav-link" href="./gallery.html">Галерея</a>
+            </li>
+            <li class="item">
+              <a class="link nav-link" href="./projects.html">Проекти</a>
+            </li>
+            <li class="item">
+              <a class="link nav-link" href="./certificates.html"
+                >Сертифікати</a
+              >
+            </li>
+            <li class="item">
+              <a class="link nav-link" href="./contacts.html">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="section">
-        <h1 class="section-title">Наші <span>проекти</span></h1>
-        <ul class="projects-list">
-          <li class="projects-list-item">
-            <article>
-              <img src="./images/projects/project-1.jpg" alt="project-1" />
-              <h2>Загальноосвітня школа</h2>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Facilis corrupti repudiandae consequatur quos sint, nesciunt id
-                velit delectus, rerum quis consectetur qui, molestias quaerat
-                commodi nulla. Libero iusto provident voluptate.
-              </p>
-              <a class="link" href="/">Дивитись</a>
-            </article>
-          </li>
-          <li class="projects-list-item">
-            <article>
-              <img src="./images/projects/project-2.jpg" alt="project-2" />
-              <h2>Паркінг на 500 автомобілів</h2>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Facilis corrupti repudiandae consequatur quos sint, nesciunt id
-                velit delectus, rerum quis consectetur qui, molestias quaerat
-                commodi nulla. Libero iusto provident voluptate.
-              </p>
-              <a class="link" href="/project.html">Дивитись</a>
-            </article>
-          </li>
-          <li class="projects-list-item">
-            <article>
-              <img src="./images/projects/project-3.jpg" alt="project-3" />
-              <h2>Проект інтер'єру офісу</h2>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Facilis corrupti repudiandae consequatur quos sint, nesciunt id
-                velit delectus, rerum quis consectetur qui, molestias quaerat
-                commodi nulla. Libero iusto provident voluptate.
-              </p>
-              <a class="link" href="/">Дивитись</a>
-            </article>
-          </li>
-        </ul>
-        <div class="slide-counter">
-          <p class="slide-current">01</p>
-          <p>05</p>
+      <section class="section projects-page">
+        <div class="container">
+          <h1 class="section-title">Наші <span>проекти</span></h1>
+          <ul class="projects-list">
+            <li class="item">
+              <article class="article flex-box">
+                <img src="./images/projects/project-1.jpg" alt="project-1" />
+                <div class="wrapper">
+                  <h2>Загальноосвітня школа</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Facilis corrupti repudiandae consequatur quos sint, nesciunt
+                    id velit delectus, rerum quis consectetur qui, molestias
+                    quaerat commodi nulla. Libero iusto provident voluptate.
+                  </p>
+                  <a class="link secondary-btn" href="/">Дивитись</a>
+                </div>
+              </article>
+            </li>
+            <li class="item">
+              <article class="article flex-box">
+                <img src="./images/projects/project-2.jpg" alt="project-2" />
+                <div class="wrapper">
+                  <h2>Паркінг на 500 автомобілів</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Facilis corrupti repudiandae consequatur quos sint, nesciunt
+                    id velit delectus, rerum quis consectetur qui, molestias
+                    quaerat commodi nulla. Libero iusto provident voluptate.
+                  </p>
+                  <a class="link secondary-btn" href="/project.html"
+                    >Дивитись</a
+                  >
+                </div>
+              </article>
+            </li>
+            <li class="item">
+              <article class="article flex-box">
+                <img src="./images/projects/project-3.jpg" alt="project-3" />
+                <div class="wrapper">
+                  <h2>Проект інтер'єру офісу</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Facilis corrupti repudiandae consequatur quos sint, nesciunt
+                    id velit delectus, rerum quis consectetur qui, molestias
+                    quaerat commodi nulla. Libero iusto provident voluptate.
+                  </p>
+                  <a class="link secondary-btn" href="/">Дивитись</a>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <div class="wrapper flex-box">
+            <div class="slide-counter flex-box">
+              <p class="slide-current">01</p>
+              <p>05</p>
+            </div>
+            <ul class="btn-list flex-box">
+              <li class="item">
+                <button class="btn primary-btn last-btn" type="button">
+                  <img src="/" alt="left" />
+                </button>
+              </li>
+              <li class="item">
+                <button class="btn primary-btn" type="button">
+                  <img src="/" alt="right" />
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul>
-          <li>
-            <button class="btn" type="button">
-              <img src="/" alt="left" />
-            </button>
-          </li>
-          <li>
-            <button class="btn" type="button">
-              <img src="/" alt="right" />
-            </button>
-          </li>
-        </ul>
       </section>
     </main>
 
     <footer class="footer">
-      <a class="link footer-link" href="/"
-        ><img src="./images/logo.svg" alt="white logo"
-      /></a>
-      <div>
-        <h3>Інформація</h3>
-        <ul>
-          <li><a class="link footer-link" href="/">Головна</a></li>
-          <li><a class="link footer-link" href="./gallery.html">Галерея</a></li>
-          <li>
-            <a class="link footer-link" href="./projects.html">Проекти</a>
-          </li>
-          <li>
-            <a class="link footer-link" href="./certificates.html"
-              >Сертифікати</a
-            >
-          </li>
-          <li>
-            <a class="link footer-link" href="./contacts.html">Контакти</a>
-          </li>
-        </ul>
+      <div class="container">
+        <div class="flex-box wrapper">
+          <a class="link footer-logo" href="/"
+            ><img src="./images/logo.svg" alt="white logo"
+          /></a>
+          <div class="footer-nav">
+            <h3>Інформація</h3>
+            <ul class="footer-nav-list">
+              <li class="item">
+                <a class="link footer-link" href="/">Головна</a>
+              </li>
+              <li class="item">
+                <a class="link footer-link" href="./gallery.html">Галерея</a>
+              </li>
+              <li class="item">
+                <a class="link footer-link" href="./projects.html">Проекти</a>
+              </li>
+              <li class="item">
+                <a class="link footer-link" href="./certificates.html"
+                  >Сертифікати</a
+                >
+              </li>
+              <li class="item">
+                <a class="link footer-link" href="./contacts.html">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contacts">
+            <h3>Контакти</h3>
+            <ul class="footer-contacts-list">
+              <li class="item">
+                <a class="link footer-link" href="/"
+                  >просп. Д.Яворницькго 3, Дніпро, 49000</a
+                >
+              </li>
+              <li class="item">
+                <a class="link footer-link" href="/">+38 056 111 11 11</a>
+              </li>
+              <li class="item">
+                <a class="link footer-link" href="/">architect@email.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-socials">
+            <h3>Соціальні мережі</h3>
+            <ul class="footer-socials-list flex-box">
+              <li class="item">
+                <a class="link footer-link" href="/"
+                  ><img src="/" alt="facebook"
+                /></a>
+              </li>
+              <li class="item">
+                <a class="link footer-link" href="/"
+                  ><img src="/" alt="twitter"
+                /></a>
+              </li>
+              <li class="item">
+                <a class="link footer-link" href="/"
+                  ><img src="/" alt="linkedIn"
+                /></a>
+              </li>
+              <li class="item">
+                <a class="link footer-link" href="/"
+                  ><img src="/" alt="pinterest"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer-cp">&copy; 2023 Architects, Всі права захищені</p>
       </div>
-      <div>
-        <h3>Контакти</h3>
-        <ul>
-          <li>
-            <a class="link footer-link" href="/"
-              >просп. Д.Яворницькго 3, Дніпро, 49000</a
-            >
-          </li>
-          <li><a class="link footer-link" href="/">+38 056 111 11 11</a></li>
-          <li><a class="link footer-link" href="/">architect@email.com</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Соціальні мережі</h3>
-        <ul>
-          <li>
-            <a class="link footer-link" href="/"
-              ><img src="/" alt="facebook"
-            /></a>
-          </li>
-          <li>
-            <a class="link footer-link" href="/"
-              ><img src="/" alt="twitter"
-            /></a>
-          </li>
-          <li>
-            <a class="link footer-link" href="/"
-              ><img src="/" alt="linkedIn"
-            /></a>
-          </li>
-          <li>
-            <a class="link footer-link" href="/"
-              ><img src="/" alt="pinterest"
-            /></a>
-          </li>
-        </ul>
-      </div>
-      <p>&copy; 2023 Architects, Всі права захищені</p>
     </footer>
   </body>
 </html>

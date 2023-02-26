@@ -11,96 +11,138 @@
       href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Rubik:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <a class="link" href="/"
-        ><img src="./images/logo.svg" alt="logo" /> <span>Architects</span></a
-      >
-      <nav>
-        <ul>
-          <li><a class="link" href="/">Головна</a></li>
-          <li><a class="link" href="./gallery.html">Галерея</a></li>
-          <li><a class="link" href="./projects.html">Проекти</a></li>
-          <li><a class="link" href="./certificates.html">Сертифікати</a></li>
-          <li><a class="link" href="./contacts.html">Контакти</a></li>
-        </ul>
-      </nav>
+      <div class="container flex-box">
+        <a class="link logo" href="/"
+          ><img src="./images/logo.svg" alt="logo" /> <span>Architects</span></a
+        >
+        <nav>
+          <ul class="nav-list">
+            <li class="item"><a class="link nav-link" href="/">Головна</a></li>
+            <li class="item">
+              <a class="link nav-link" href="./gallery.html">Галерея</a>
+            </li>
+            <li class="item">
+              <a class="link nav-link" href="./projects.html">Проекти</a>
+            </li>
+            <li class="item">
+              <a class="link nav-link" href="./certificates.html"
+                >Сертифікати</a
+              >
+            </li>
+            <li class="item">
+              <a class="link nav-link" href="./contacts.html">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="section"></section>
-      <h1 class="section-title">Контактна <span>інформація</span></h1>
-      <p>"Architects"</p>
-      <ul>
-        <li>
-          <a class="link" href="/">просп. Д.Яворницькго 3, Дніпро, 49000</a>
-        </li>
-        <li><a class="link" href="/">+38 056 111 11 11</a></li>
-        <li><a class="link" href="/">architect@email.com</a></li>
-      </ul>
-      <button class="btn form-btn" type="button">Зворотній зв'язок</button>
+      <section class="section contacts-page">
+        <div class="container flex-box">
+          <div class="wrapper">
+            <h1 class="section-title">Контактна <span>інформація</span></h1>
+            <p>"Architects"</p>
+            <ul class="contacts-list">
+              <li class="item">
+                <a class="link" href="/"
+                  >просп. Д.Яворницькго 3, Дніпро, 49000</a
+                >
+              </li>
+              <li class="item">
+                <a class="link" href="/">+38 056 111 11 11</a>
+              </li>
+              <li class="item">
+                <a class="link" href="/">architect@email.com</a>
+              </li>
+            </ul>
+            <button class="btn secondary-btn form-btn" type="button">
+              Зворотній зв'язок
+            </button>
+          </div>
+          <img src="./images/contacts/desktop/tmp-img.jpg" alt="map" />
+        </div>
+      </section>
     </main>
     <footer class="footer">
-      <a class="link footer-link" href="/"
-        ><img src="./images/logo.svg" alt="white logo"
-      /></a>
-      <div>
-        <h3>Інформація</h3>
-        <ul>
-          <li><a class="link footer-link" href="/">Головна</a></li>
-          <li><a class="link footer-link" href="./gallery.html">Галерея</a></li>
-          <li>
-            <a class="link footer-link" href="./projects.html">Проекти</a>
-          </li>
-          <li>
-            <a class="link footer-link" href="./certificates.html"
-              >Сертифікати</a
-            >
-          </li>
-          <li>
-            <a class="link footer-link" href="./contacts.html">Контакти</a>
-          </li>
-        </ul>
+      <div class="container">
+        <div class="flex-box wrapper">
+          <a class="link footer-logo" href="/"
+            ><img src="./images/logo.svg" alt="white logo"
+          /></a>
+          <div class="footer-nav">
+            <h3>Інформація</h3>
+            <ul class="footer-nav-list">
+              <li class="item">
+                <a class="link footer-link" href="/">Головна</a>
+              </li>
+              <li class="item">
+                <a class="link footer-link" href="./gallery.html">Галерея</a>
+              </li>
+              <li class="item">
+                <a class="link footer-link" href="./projects.html">Проекти</a>
+              </li>
+              <li class="item">
+                <a class="link footer-link" href="./certificates.html"
+                  >Сертифікати</a
+                >
+              </li>
+              <li class="item">
+                <a class="link footer-link" href="./contacts.html">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contacts">
+            <h3>Контакти</h3>
+            <ul class="footer-contacts-list">
+              <li class="item">
+                <a class="link footer-link" href="/"
+                  >просп. Д.Яворницькго 3, Дніпро, 49000</a
+                >
+              </li>
+              <li class="item">
+                <a class="link footer-link" href="/">+38 056 111 11 11</a>
+              </li>
+              <li class="item">
+                <a class="link footer-link" href="/">architect@email.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-socials">
+            <h3>Соціальні мережі</h3>
+            <ul class="footer-socials-list flex-box">
+              <li class="item">
+                <a class="link footer-link" href="/"
+                  ><img src="/" alt="facebook"
+                /></a>
+              </li>
+              <li class="item">
+                <a class="link footer-link" href="/"
+                  ><img src="/" alt="twitter"
+                /></a>
+              </li>
+              <li class="item">
+                <a class="link footer-link" href="/"
+                  ><img src="/" alt="linkedIn"
+                /></a>
+              </li>
+              <li class="item">
+                <a class="link footer-link" href="/"
+                  ><img src="/" alt="pinterest"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer-cp">&copy; 2023 Architects, Всі права захищені</p>
       </div>
-      <div>
-        <h3>Контакти</h3>
-        <ul>
-          <li>
-            <a class="link footer-link" href="/"
-              >просп. Д.Яворницькго 3, Дніпро, 49000</a
-            >
-          </li>
-          <li><a class="link footer-link" href="/">+38 056 111 11 11</a></li>
-          <li><a class="link footer-link" href="/">architect@email.com</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Соціальні мережі</h3>
-        <ul>
-          <li>
-            <a class="link footer-link" href="/"
-              ><img src="/" alt="facebook"
-            /></a>
-          </li>
-          <li>
-            <a class="link footer-link" href="/"
-              ><img src="/" alt="twitter"
-            /></a>
-          </li>
-          <li>
-            <a class="link footer-link" href="/"
-              ><img src="/" alt="linkedIn"
-            /></a>
-          </li>
-          <li>
-            <a class="link footer-link" href="/"
-              ><img src="/" alt="pinterest"
-            /></a>
-          </li>
-        </ul>
-      </div>
-      <p>&copy; 2023 Architects, Всі права захищені</p>
     </footer>
   </body>
 </html>
