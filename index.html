@@ -28,7 +28,9 @@
         </a>
         <nav>
           <ul class="nav-list">
-            <li class="item"><a class="link nav-link" href="/">Головна</a></li>
+            <li class="item">
+              <a class="link nav-link current" href="/">Головна</a>
+            </li>
             <li class="item">
               <a class="link nav-link" href="./gallery.html">Галерея</a>
             </li>
@@ -73,27 +75,31 @@
               <p>02</p>
             </div>
           </div>
-          <ul>
-            <li>
-              <img
-                src="./images/main/hero-slide-1.jpg"
-                alt="Project Nurtown"
-              /><a class="link secondary-btn" href="/"
-                >Переглянути
-                <svg class="btn-icon">
-                  <use href="./images/icons.svg#icon-arrow"></use>
-                </svg>
-              </a>
+          <ul class="slider-list">
+            <li class="item">
+              <div class="overlay">
+                <img
+                  src="./images/main/hero-slide-1.jpg"
+                  alt="Project Nurtown"
+                /><a class="link secondary-btn slider-link" href="/"
+                  >Переглянути
+                  <svg class="btn-icon">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </li>
-            <li hidden>
-              <img src="./images/main/hero-slide-2.jpg" alt="Project" /><a
-                class="link secondary-btn"
-                href="/"
-                >Переглянути
-                <svg class="btn-icon">
-                  <use href="./images/icons.svg#icon-arrow"></use>
-                </svg>
-              </a>
+            <li hidden class="item">
+              <div class="overlay">
+                <img src="./images/main/hero-slide-2.jpg" alt="Project" /><a
+                  class="link secondary-btn slider-link"
+                  href="/"
+                  >Переглянути
+                  <svg class="btn-icon">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </li>
           </ul>
         </div>
@@ -155,8 +161,8 @@
           <ul class="main-projects-list flex-box">
             <li class="item">
               <img src="./images/main/project-1.jpg" alt="project-1" />
-              <div hidden class="project-container">
-                <h3>Досуговий центр</h3>
+              <div class="project-container">
+                <h3 class="projects-title">Досуговий центр</h3>
                 <a class="link projects-link" href="/"
                   >Детальніше
                   <svg class="btn-icon">
@@ -167,8 +173,8 @@
             </li>
             <li class="item">
               <img src="./images/main/project-2.jpg" alt="project-2" />
-              <div hidden class="project-container">
-                <h3>Project 2</h3>
+              <div class="project-container">
+                <h3 class="projects-title">Проект 2</h3>
                 <a class="link projects-link" href="/"
                   >Детальніше
                   <svg class="btn-icon">
@@ -179,8 +185,8 @@
             </li>
             <li class="item">
               <img src="./images/main/project-3.jpg" alt="project-3" />
-              <div hidden class="project-container">
-                <h3>Project 3</h3>
+              <div class="project-container">
+                <h3 class="projects-title">Проект 3</h3>
                 <a class="link projects-link" href="/"
                   >Детальніше
                   <svg class="btn-icon">
@@ -191,8 +197,8 @@
             </li>
             <li class="item">
               <img src="./images/main/project-4.jpg" alt="project-4" />
-              <div hidden class="project-container">
-                <h3>Project 4</h3>
+              <div class="project-container">
+                <h3>Проект 4</h3>
                 <a class="link projects-link" href="/"
                   >Детальніше
                   <svg class="btn-icon">
@@ -203,8 +209,8 @@
             </li>
             <li class="item">
               <img src="./images/main/project-5.jpg" alt="project-5" />
-              <div hidden class="project-container">
-                <h3>Project 5</h3>
+              <div class="project-container">
+                <h3>Проект 5</h3>
                 <a class="link projects-link" href="/"
                   >Детальніше
                   <svg class="btn-icon">
@@ -214,7 +220,7 @@
               </div>
             </li>
           </ul>
-          <a class="link secondary-btn projects-link" href="/projects"
+          <a class="link all-projects-link" href="/projects"
             >Всі проекти
             <svg class="btn-icon">
               <use href="./images/icons.svg#icon-arrow"></use>
