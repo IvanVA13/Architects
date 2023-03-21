@@ -71,6 +71,73 @@
             <button class="btn secondary-btn form-btn" type="button">
               Зворотній зв'язок
             </button>
+            <div class="backdrop hidden">
+              <form class="form contacts-form">
+                <div class="form-close">
+                  <svg class="close-icon">
+                    <use href="./images/icons.svg#icon-close"></use>
+                  </svg>
+                </div>
+                <h2 class="form-title">Задати питання</h2>
+                <label class="form-field">
+                  <input class="form-input" type="text" placeholder=" " />
+                  <span class="form-label">Ім'я</span>
+                </label>
+                <label class="form-field">
+                  <input
+                    class="form-input"
+                    type="tel"
+                    placeholder=" "
+                    required
+                  />
+                  <span class="form-label">Номер телефону<sup>*</sup></span>
+                </label>
+                <label class="form-field">
+                  <input
+                    class="form-input"
+                    type="email"
+                    placeholder=" "
+                    required
+                  />
+
+                  <span class="form-label">E-mail<sup>*</sup></span>
+                </label>
+                <label class="form-field">
+                  <input class="form-input" type="text" placeholder=" " />
+                  <span class="form-label">Товар/послуга, що цікавить</span>
+                </label>
+                <label class="form-field">
+                  <textarea
+                    class="form-input"
+                    name="massage"
+                    id="massage"
+                    rows="10"
+                    placeholder=" "
+                    required
+                  ></textarea>
+                  <span class="form-label">Повідомлення<sup>*</sup></span>
+                </label>
+                <label class="form-terms-field">
+                  <input
+                    class="form-cbx"
+                    type="checkbox"
+                    name="agree"
+                    id="agree"
+                  />
+                  <span class="form-custom-cbx"></span>
+                  <span class="form-cbx-label">
+                    Надсилаючи заявку Ви погоджуєтесь з політикою
+                    конфіденційності</span
+                  >
+                </label>
+                <button class="btn secondary-btn form-btn" type="submit">
+                  Відправити
+                  <svg class="btn-icon">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
           </div>
           <img src="./images/contacts/desktop/tmp-img.jpg" alt="map" />
         </div>
@@ -160,5 +227,6 @@
         <p class="footer-cp">&copy; 2023 Architects, Всі права захищені</p>
       </div>
     </footer>
+    <script src="./open-close.js"></script>
   </body>
 </html>
