@@ -15,12 +15,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header>
-      <div class="container flex-box">
-        <a class="link logo" href="/">
+      <div class="container header-container">
+        <a class="logo" href="/">
           <svg class="logo-icon">
             <use href="./images/icons.svg#icon-logo"></use>
           </svg>
@@ -29,21 +29,19 @@
         <nav>
           <ul class="nav-list">
             <li class="item">
-              <a class="link nav-link current" href="/">Головна</a>
+              <a class="nav-link current" href="/">Головна</a>
             </li>
             <li class="item">
-              <a class="link nav-link" href="./gallery.html">Галерея</a>
+              <a class="nav-link" href="./gallery.html">Галерея</a>
             </li>
             <li class="item">
-              <a class="link nav-link" href="./projects.html">Проекти</a>
+              <a class="nav-link" href="./projects.html">Проекти</a>
             </li>
             <li class="item">
-              <a class="link nav-link" href="./certificates.html"
-                >Сертифікати</a
-              >
+              <a class="nav-link" href="./certificates.html">Сертифікати</a>
             </li>
             <li class="item">
-              <a class="link nav-link" href="./contacts.html">Контакти</a>
+              <a class="nav-link" href="./contacts.html">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -51,26 +49,26 @@
     </header>
     <main>
       <section class="section hero">
-        <div class="container flex-box">
+        <div class="container hero-container">
           <div class="wrapper">
             <h1 class="section-title">Project <span>Nurtown</span></h1>
-            <ul class="hero-btn-list btn-list flex-box">
+            <ul class="hero-btn-list btn-list">
               <li class="item">
-                <button class="btn primary-btn last-btn" type="button">
+                <button class="primary-btn last-btn" type="button">
                   <svg class="btn-icon reverse">
                     <use href="./images/icons.svg#icon-arrow"></use>
                   </svg>
                 </button>
               </li>
               <li class="item">
-                <button class="btn primary-btn" type="button">
+                <button class="primary-btn" type="button">
                   <svg class="btn-icon">
                     <use href="./images/icons.svg#icon-arrow"></use>
                   </svg>
                 </button>
               </li>
             </ul>
-            <div class="slide-counter flex-box">
+            <div class="slide-counter">
               <p class="slide-current">01</p>
               <p>02</p>
             </div>
@@ -81,7 +79,7 @@
                 <img
                   src="./images/main/hero-slide-1.jpg"
                   alt="Project Nurtown"
-                /><a class="link secondary-btn slider-link" href="/"
+                /><a class="secondary-btn slider-link" href="/"
                   >Переглянути
                   <svg class="btn-icon">
                     <use href="./images/icons.svg#icon-arrow"></use>
@@ -92,7 +90,7 @@
             <li hidden class="item">
               <div class="overlay">
                 <img src="./images/main/hero-slide-2.jpg" alt="Project" /><a
-                  class="link secondary-btn slider-link"
+                  class="secondary-btn slider-link"
                   href="/"
                   >Переглянути
                   <svg class="btn-icon">
@@ -105,8 +103,8 @@
         </div>
       </section>
       <section class="section about-us">
-        <div class="container flex-box about-us-container">
-          <ul class="image-list flex-box">
+        <div class="container about-us-container">
+          <ul class="image-list">
             <li class="item">
               <img src="./images/main/about-us-img-1.jpg" alt="building-1" />
             </li>
@@ -127,7 +125,7 @@
               survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged.
             </p>
-            <a class="link secondary-btn" href="/"
+            <a class="secondary-btn about-us-btn" href="/"
               >Читати
               <svg class="btn-icon">
                 <use href="./images/icons.svg#icon-arrow"></use>
@@ -139,14 +137,14 @@
       <section class="section tasks">
         <div class="container">
           <h2 class="section-title">Основні задачі</h2>
-          <ol class="tasks-list flex-box">
-            <li class="item flex-box">
+          <ol class="tasks-list">
+            <li class="item">
               <p>
                 Створення комфортних умов та підвищення якості обслуговування
                 клієнтів
               </p>
             </li>
-            <li class="item flex-box">
+            <li class="item">
               <p>
                 Постійно вдосконалювати якість послуг шляхом навчання персоналу,
                 закупівлі нового обладнання та посиленої реклами на ринку
@@ -158,12 +156,12 @@
       <section class="section projects">
         <div class="container">
           <h2 class="section-title">Наші проекти</h2>
-          <ul class="main-projects-list flex-box">
+          <ul class="main-projects-list">
             <li class="item">
               <img src="./images/main/project-1.jpg" alt="project-1" />
               <div class="project-container">
                 <h3 class="projects-title">Досуговий центр</h3>
-                <a class="link projects-link" href="/"
+                <a class="projects-link" href="/"
                   >Детальніше
                   <svg class="btn-icon">
                     <use href="./images/icons.svg#icon-arrow"></use>
@@ -175,7 +173,7 @@
               <img src="./images/main/project-2.jpg" alt="project-2" />
               <div class="project-container">
                 <h3 class="projects-title">Проект 2</h3>
-                <a class="link projects-link" href="/"
+                <a class="projects-link" href="/"
                   >Детальніше
                   <svg class="btn-icon">
                     <use href="./images/icons.svg#icon-arrow"></use>
@@ -187,7 +185,7 @@
               <img src="./images/main/project-3.jpg" alt="project-3" />
               <div class="project-container">
                 <h3 class="projects-title">Проект 3</h3>
-                <a class="link projects-link" href="/"
+                <a class="projects-link" href="/"
                   >Детальніше
                   <svg class="btn-icon">
                     <use href="./images/icons.svg#icon-arrow"></use>
@@ -199,7 +197,7 @@
               <img src="./images/main/project-4.jpg" alt="project-4" />
               <div class="project-container">
                 <h3>Проект 4</h3>
-                <a class="link projects-link" href="/"
+                <a class="projects-link" href="/"
                   >Детальніше
                   <svg class="btn-icon">
                     <use href="./images/icons.svg#icon-arrow"></use>
@@ -211,7 +209,7 @@
               <img src="./images/main/project-5.jpg" alt="project-5" />
               <div class="project-container">
                 <h3>Проект 5</h3>
-                <a class="link projects-link" href="/"
+                <a class="projects-link" href="/"
                   >Детальніше
                   <svg class="btn-icon">
                     <use href="./images/icons.svg#icon-arrow"></use>
@@ -220,7 +218,7 @@
               </div>
             </li>
           </ul>
-          <a class="link all-projects-link" href="/projects"
+          <a class="all-projects-link" href="/projects"
             >Всі проекти
             <svg class="btn-icon">
               <use href="./images/icons.svg#icon-arrow"></use>
@@ -231,7 +229,7 @@
       <section class="section contacts">
         <div class="container">
           <h2 class="section-title">Зв'яжіться з нами</h2>
-          <div class="wrapper flex-box">
+          <div class="wrapper">
             <form class="form">
               <label class="form-field">
                 <input class="form-input" type="text" placeholder=" " />
@@ -279,7 +277,7 @@
                   конфіденційності</span
                 >
               </label>
-              <button class="btn secondary-btn form-btn" type="submit">
+              <button class="secondary-btn form-btn" type="submit">
                 Відправити
                 <svg class="btn-icon">
                   <use href="./images/icons.svg#icon-arrow"></use>
@@ -293,8 +291,8 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="flex-box wrapper">
-          <a class="link footer-logo" href="/">
+        <div class="wrapper">
+          <a class="footer-logo" href="/">
             <svg class="logo-icon white">
               <use href="./images/icons.svg#icon-logo"></use>
             </svg>
@@ -304,21 +302,21 @@
             <h3>Інформація</h3>
             <ul class="footer-nav-list">
               <li class="item">
-                <a class="link footer-link" href="/">Головна</a>
+                <a class="footer-link" href="/">Головна</a>
               </li>
               <li class="item">
-                <a class="link footer-link" href="./gallery.html">Галерея</a>
+                <a class="footer-link" href="./gallery.html">Галерея</a>
               </li>
               <li class="item">
-                <a class="link footer-link" href="./projects.html">Проекти</a>
+                <a class="footer-link" href="./projects.html">Проекти</a>
               </li>
               <li class="item">
-                <a class="link footer-link" href="./certificates.html"
+                <a class="footer-link" href="./certificates.html"
                   >Сертифікати</a
                 >
               </li>
               <li class="item">
-                <a class="link footer-link" href="./contacts.html">Контакти</a>
+                <a class="footer-link" href="./contacts.html">Контакти</a>
               </li>
             </ul>
           </div>
@@ -326,45 +324,45 @@
             <h3>Контакти</h3>
             <ul class="footer-contacts-list">
               <li class="item">
-                <a class="link footer-link" href="/"
+                <a class="footer-link" href="/"
                   >просп. Д.Яворницькго 3, Дніпро, 49000</a
                 >
               </li>
               <li class="item">
-                <a class="link footer-link" href="/">+38 056 111 11 11</a>
+                <a class="footer-link" href="/">+38 056 111 11 11</a>
               </li>
               <li class="item">
-                <a class="link footer-link" href="/">architect@email.com</a>
+                <a class="footer-link" href="/">architect@email.com</a>
               </li>
             </ul>
           </div>
           <div class="footer-socials">
             <h3>Соціальні мережі</h3>
-            <ul class="footer-socials-list flex-box">
+            <ul class="footer-socials-list">
               <li class="item">
-                <a class="link footer-link socials-link" href="/">
-                  <svg class="socials-icon" width="10" height="19">
+                <a class="footer-link footer-socials-link" href="/">
+                  <svg class="footer-socials-icon" width="10" height="19">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="item">
-                <a class="link footer-link socials-link" href="/">
-                  <svg class="socials-icon" width="22" height="17">
+                <a class="footer-link footer-socials-link" href="/">
+                  <svg class="footer-socials-icon" width="22" height="17">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="item">
-                <a class="link footer-link socials-link" href="/">
-                  <svg class="socials-icon" width="20" height="20">
+                <a class="footer-link footer-socials-link" href="/">
+                  <svg class="footer-socials-icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedIn"></use>
                   </svg>
                 </a>
               </li>
               <li class="item">
-                <a class="link footer-link socials-link" href="/">
-                  <svg class="socials-icon" width="14" height="19">
+                <a class="footer-link footer-socials-link" href="/">
+                  <svg class="footer-socials-icon" width="14" height="19">
                     <use href="./images/icons.svg#icon-pinterest"></use>
                   </svg>
                 </a>

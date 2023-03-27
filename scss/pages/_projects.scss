@@ -1,0 +1,48 @@
+.projects-page {
+  padding-bottom: 120px;
+}
+
+.projects-list {
+  margin-bottom: 60px;
+}
+
+.projects-list > .item {
+  background-color: #fbfbfb;
+}
+
+.projects-list > .item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.article {
+  @include centerFlex();
+}
+
+.article > .wrapper {
+  padding-top: 30px;
+  padding-right: 70px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+.article h2 {
+  margin-bottom: 20px;
+
+  color: get-color("form");
+  font-weight: inherit;
+  font-size: 40px;
+  line-height: 1.25;
+}
+
+.article p {
+  margin-bottom: 64px;
+}
+
+.projects-link {
+  @extend %link;
+}
+
+.projects-wrapper {
+  @include centerFlex();
+  column-gap: 26px;
+}

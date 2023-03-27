@@ -1,0 +1,43 @@
+.gallery {
+  padding-bottom: 120px;
+}
+
+.gallery-list {
+  @include centerFlex();
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 60px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.gallery-list > .item {
+  position: relative;
+  width: calc((100% - 120px) / 5);
+
+  overflow: hidden;
+}
+
+.gallery .wrapper {
+  @include centerFlex();
+  column-gap: 26px;
+}
+
+.gallery-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  height: 50%;
+
+  background-color: get-color("bg");
+  transform: translateY(0);
+  transition: transform $transition-animation;
+
+  .gallery-list > .item:hover & {
+    transform: translateY(-100%);
+  }
+}

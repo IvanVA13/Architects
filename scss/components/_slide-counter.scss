@@ -1,0 +1,30 @@
+.slide-counter {
+  position: relative;
+  @include centerFlex();
+  justify-content: space-between;
+  width: 142px;
+
+  color: get-color("second");
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    content: "";
+    width: 44px;
+    height: 2px;
+    background-color: get-color("second");
+    transform: rotate(-45deg) translateX(-40%);
+  }
+}
+
+.slide-current {
+  color: get-color();
+}
+
+.overlay {
+  position: relative;
+}

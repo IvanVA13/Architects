@@ -1,0 +1,9 @@
+.contacts {
+  padding-bottom: 120px;
+}
+
+.contacts .wrapper {
+  @include centerFlex();
+  align-items: start;
+  column-gap: 30px;
+}

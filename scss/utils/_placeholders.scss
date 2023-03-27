@@ -1,0 +1,43 @@
+%btn {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  background-color: get-color("third-bg");
+  transition: color $transition-animation,
+    background-color $transition-animation;
+
+  &:hover,
+  &:focus {
+    color: get-color("third-bg");
+    background-color: get-color();
+  }
+}
+
+%link {
+  display: inline-block;
+
+  color: inherit;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: get-color("accent");
+  transition: color $transition-animation,
+    background-color $transition-animation;
+
+  // &:visited {
+  //   color: inherit;
+  // }
+
+  &:hover,
+  &:focus {
+    color: get-color("accent");
+    background-color: get-color();
+  }
+}

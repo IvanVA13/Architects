@@ -1,0 +1,12 @@
+.project {
+  padding-bottom: 120px;
+}
+
+.project-image-list > .item {
+  margin-bottom: 30px;
+}
+
+.project-image-list .wrapper {
+  @include centerFlex();
+  column-gap: 30px;
+}

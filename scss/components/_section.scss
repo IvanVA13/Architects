@@ -1,0 +1,17 @@
+.section {
+  padding-top: 120px;
+}
+
+.section-title {
+  margin-bottom: 60px;
+
+  color: get-color("second");
+  font-size: 64px;
+  font-weight: inherit;
+  line-height: 1;
+}
+
+.section-title span {
+  color: get-color();
+  font-weight: 700;
+}

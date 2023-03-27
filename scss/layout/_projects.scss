@@ -1,0 +1,100 @@
+.projects {
+  color: get-color("accent");
+  font-family: "Gothic A1", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.main-projects-list {
+  @include centerFlex();
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.main-projects-list > .item {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.project-container {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: get-color();
+  opacity: 0.8;
+  transform: translateY(0);
+  transition: transform $transition-animation;
+
+  .main-projects-list > .item:nth-child(-n + 2) > & {
+    padding: 60px 90px;
+
+    font-size: 55px;
+  }
+
+  .main-projects-list > .item:nth-last-child(-n + 3) > & {
+    padding: 70px 20px;
+
+    font-size: 40px;
+  }
+
+  .main-projects-list > .item:hover > & {
+    transform: translateY(-100%);
+  }
+}
+
+.projects-title {
+  margin-bottom: 8px;
+
+  color: inherit;
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 1;
+}
+
+.projects-link {
+  @extend %link;
+  @include centerFlex();
+  padding: 15px 0;
+
+  color: get-color("accent");
+
+  background-color: get-color();
+
+  &:hover,
+  &:focus {
+    color: get-color();
+    background-color: get-color("accent");
+  }
+}
+
+.all-projects-link {
+  @extend %link;
+  @include centerFlex();
+  justify-content: center;
+  column-gap: 12px;
+  margin-left: auto;
+  padding: 30px 40px;
+  width: 222px;
+
+  color: get-color("accent");
+  text-align: center;
+
+  border: 1px solid get-color();
+  background-color: get-color();
+
+  &:hover,
+  &:focus {
+    color: get-color();
+    background-color: get-color("accent");
+  }
+}

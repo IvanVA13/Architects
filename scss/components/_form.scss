@@ -1,0 +1,102 @@
+.form {
+  color: get-color("form");
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.03em;
+}
+
+.form-field {
+  position: relative;
+}
+
+.form-input {
+  display: block;
+  padding: 14px 20px;
+  width: 100%;
+
+  color: currentColor;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.03em;
+
+  background-color: get-color("third-bg");
+  border: transparent;
+}
+
+input.form-input {
+  margin-bottom: 20px;
+}
+
+textarea.form-input {
+  margin-bottom: 22px;
+
+  resize: none;
+}
+
+.form-label {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+
+  transition: transform $transition-animation;
+}
+
+.form-label > sup {
+  color: #c30000;
+}
+
+.form-field:focus-within > .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-31px);
+}
+
+.form-terms-field {
+  @include centerFlex();
+  justify-content: space-between;
+  column-gap: 16px;
+  margin-bottom: 22px;
+}
+
+.form-cbx {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-custom-cbx {
+  padding: 5px 3px;
+  flex-basis: 24px;
+
+  height: 24px;
+
+  border: 2px solid get-color("third-bg");
+  border-radius: 4px;
+  transition: background-color $transition-animation;
+}
+
+.form-cbx:checked + .form-custom-cbx {
+  border-color: transparent;
+  background-color: get-color("third-bg");
+  background-image: url(../images/confirm.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+
+.form-cbx-label {
+  flex-basis: 340px;
+}
+
+.form-btn {
+  color: get-color("accent");
+  background-color: get-color();
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  color: get-color();
+  background-color: get-color("accent");
+}

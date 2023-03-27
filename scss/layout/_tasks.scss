@@ -1,0 +1,28 @@
+.tasks {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.64;
+}
+
+.tasks-list {
+  @include centerFlex();
+  column-gap: 187px;
+
+  list-style-type: none;
+  counter-reset: ol-counter;
+}
+
+.tasks-list > .item {
+  @include centerFlex();
+
+  &:before {
+    margin-right: 30px;
+
+    color: get-color("third-bg");
+    font-weight: 900;
+    font-size: 200px;
+    line-height: 1.2;
+    content: counter(ol-counter);
+    counter-increment: ol-counter;
+  }
+}

@@ -1,0 +1,34 @@
+.nav {
+}
+
+.nav-list {
+  @include centerFlex();
+  column-gap: 60px;
+}
+
+.nav-list > .item {
+}
+
+.nav-link {
+  @extend %link;
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 45px;
+
+  &.current::before,
+  &.current::after {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+  }
+
+  &.current::before {
+    top: 40%;
+  }
+  &.current::after {
+    bottom: 40%;
+  }
+}

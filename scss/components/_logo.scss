@@ -1,0 +1,27 @@
+.logo {
+  @extend %link;
+  margin-right: 330px;
+  padding-top: 29px;
+  padding-bottom: 29px;
+
+  text-align: center;
+}
+
+.logo-icon {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 69px;
+  height: 42px;
+
+  fill: currentColor;
+}
+
+.logo-icon.white {
+  width: 138px;
+  height: 84px;
+}
+
+.logo > span {
+  display: block;
+}

@@ -1,0 +1,98 @@
+.contacts-page {
+  padding-bottom: 120px;
+}
+
+.contacts-page > .container {
+  @include centerFlex();
+}
+
+.contacts-page .wrapper {
+  margin-right: 30px;
+}
+
+.contacts-list {
+  margin-bottom: 43px;
+}
+
+.contacts-list > .item:not(:last-child) {
+  margin-bottom: 43px;
+}
+
+.contacts-link {
+  @extend %link;
+}
+
+.contacts-page p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.222;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  width: 100%;
+  height: 100%;
+
+  background-color: get-color("second-accent");
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity $transition-animation, transform $transition-animation;
+
+  &.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.9);
+  }
+}
+
+.contacts-form {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 40px;
+  width: 470px;
+
+  background-color: get-color("accent");
+}
+
+.form-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: block;
+
+  color: #c1c1c1;
+
+  transition: color $transition-animation;
+  &:hover,
+  &:focus {
+    color: get-color();
+  }
+}
+
+.close-icon {
+  width: 14px;
+  height: 14px;
+
+  stroke: currentColor;
+}
+
+.form-title {
+  margin-bottom: 25px;
+
+  color: get-color();
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.238;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.contacts-form .form-cbx-label {
+  flex-basis: 350px;
+}

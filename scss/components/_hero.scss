@@ -1,0 +1,24 @@
+.hero {
+  padding: 0;
+}
+
+.hero-container {
+  @include centerFlex();
+}
+
+h1 {
+  margin-right: 69px;
+
+  text-transform: uppercase;
+}
+
+.hero-btn-list {
+  margin-bottom: 93px;
+}
+
+.slider-link {
+  @extend %link;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

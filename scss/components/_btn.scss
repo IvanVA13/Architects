@@ -1,0 +1,38 @@
+.primary-btn {
+  @extend %btn;
+  padding: 21px 17px;
+
+  background-color: #f9f9f9;
+  border: 1px solid #f2f2f2;
+}
+
+.secondary-btn {
+  @extend %btn;
+  @include centerFlex(inline-flex);
+  justify-content: center;
+  column-gap: 12px;
+  min-width: 222px;
+  height: 71px;
+
+  text-align: center;
+}
+
+.btn-icon {
+  display: block;
+  width: 16px;
+  height: 8px;
+
+  fill: currentColor;
+  &.reverse {
+    transform: rotate(180deg);
+  }
+}
+
+.last-btn {
+  background-color: get-color("accent");
+}
+
+.btn-list {
+  @include centerFlex();
+  column-gap: 23px;
+}

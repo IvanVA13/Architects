@@ -1,0 +1,8 @@
+@function get-color($key: "main") {
+  @return map-get($color-palette, $key);
+}
+
+// get-color('')
+// @include centerFlex();
+// @extend %link;
+// @extend %btn;

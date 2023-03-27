@@ -1,0 +1,36 @@
+.about-us-container {
+  @include centerFlex($ai: start);
+  column-gap: 30px;
+  padding-top: 30px;
+  padding-right: 85px;
+  padding-bottom: 30px;
+  padding-left: 115px;
+
+  background-color: get-color("bg");
+}
+
+.image-list {
+  @include centerFlex();
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 570px;
+}
+
+.image-list > .item:nth-child(2) {
+  transform: translateY(25%);
+}
+
+.about-us-container > .wrapper {
+  width: 400px;
+}
+
+.about-us .section-title {
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  margin-bottom: 20px;
+}
+.about-us-btn {
+  @extend %link;
+}

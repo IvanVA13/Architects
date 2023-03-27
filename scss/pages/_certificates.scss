@@ -1,0 +1,19 @@
+.certificates {
+  padding-bottom: 120px;
+}
+
+.certificates-list {
+  @include centerFlex();
+  column-gap: 75px;
+  margin-bottom: 50px;
+}
+
+.certificates-list > .item {
+  width: calc((100% - 150px) / 3);
+}
+
+.certificates .wrapper {
+  @include centerFlex();
+  justify-content: end;
+  column-gap: 26px;
+}
